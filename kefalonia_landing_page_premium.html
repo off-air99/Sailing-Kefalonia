@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>הפלגת קונספט לקפלוניה</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      color: #333;
+    }
+    header {
+      background: url('https://upload.wikimedia.org/wikipedia/commons/b/b6/Kefalonia_Myrtos_beach.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+    section {
+      padding: 2rem;
+      max-width: 850px;
+      margin: auto;
+    }
+    h2 {
+      color: #0077b6;
+    }
+    .highlight {
+      background: #fef9c3;
+      padding: 1.5rem;
+      border-radius: 10px;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .images img {
+      width: 260px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .cta {
+      background: #00b4d8;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 8px;
+      margin: 3rem 0 2rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    input, textarea, button {
+      padding: 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #0077b6;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #0096c7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>הפלגת קונספט לקפלוניה</h1>
+    <p>שיט חלומי, טעמים יווניים, נופים מהפנטים – ואתם במרכז.</p>
+  </header>
+
+  <section>
+    <h2>עצמו עיניים לרגע...</h2>
+    <div class="highlight">
+      אתם על סיפון יאכטה לבנה, רגליים יחפות, כוס יין לבן קר ביד אחת, ודג צלוי טרי על הצלחת. מסביבכם מפרצים טורקיזיים, צחוק ברקע, ניחוחות ים ואוזו באוויר. בריזה יוונית קלה, והשמש שוקעת בדיוק בזמן.
+    </div>
+
+    <div class="images">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Sailing_Yacht_in_Greece.jpg" alt="יאכטה בים">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Greek_food_dish.jpg" alt="אוכל יווני">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Wine_and_vineyard.jpg" alt="יין בכרם">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Kefalonia_Myrtos_beach.jpg" alt="חוף בקפלוניה">
+    </div>
+
+    <div class="cta">
+      מספר המקומות מוגבל מאוד! השאירו פרטים ותתחילו לדמיין את החופשה הבאה שלכם...
+    </div>
+
+    <form>
+      <label for="name">שם מלא:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">אימייל:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">טלפון:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">הערות / שאלות:</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">שלחו לי פרטים!</button>
+    </form>
+  </section>
+</body>
+</html>
